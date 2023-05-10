@@ -1,0 +1,48 @@
+de/uni_hannover/cardgame/base/Dealer.java
+ de.uni_hannover.cardgame.base.Dealer
+de/uni_hannover/cardgame/controller/PointsController.java
+ de.uni_hannover.cardgame.controller.PointsController
+de/uni_hannover/cardgame/Main.java
+ de.uni_hannover.cardgame.Main
+de/uni_hannover/cardgame/base/Chip.java
+ de.uni_hannover.cardgame.base.Chip
+de/uni_hannover/cardgame/base/Deck.java
+ de.uni_hannover.cardgame.base.Deck
+de/uni_hannover/cardgame/base/Phase.java
+ de.uni_hannover.cardgame.base.Phase
+de/uni_hannover/cardgame/controller/RulesController.java
+ de.uni_hannover.cardgame.controller.RulesController
+de/uni_hannover/cardgame/controller/GameplayController.java
+ de.uni_hannover.cardgame.controller.GameplayController
+de/uni_hannover/cardgame/ServerClient/Client.java
+ de.uni_hannover.cardgame.ServerClient.Client
+ de.uni_hannover.cardgame.ServerClient.Client$1
+de/uni_hannover/cardgame/controller/GameController.java
+ de.uni_hannover.cardgame.controller.GameController
+de/uni_hannover/cardgame/base/Hand.java
+ de.uni_hannover.cardgame.base.Hand
+de/uni_hannover/cardgame/base/PlayingField.java
+ de.uni_hannover.cardgame.base.PlayingField
+de/uni_hannover/cardgame/controller/CreateLobbyController.java
+ de.uni_hannover.cardgame.controller.CreateLobbyController
+de/uni_hannover/cardgame/controller/JoinLobbyController.java
+ de.uni_hannover.cardgame.controller.JoinLobbyController
+de/uni_hannover/cardgame/base/Player.java
+ de.uni_hannover.cardgame.base.Player
+de/uni_hannover/cardgame/base/Card.java
+ de.uni_hannover.cardgame.base.Card
+de/uni_hannover/cardgame/base/Rank.java
+ de.uni_hannover.cardgame.base.Rank
+ de.uni_hannover.cardgame.base.Rank$1
+de/uni_hannover/cardgame/controller/LobbyController.java
+ de.uni_hannover.cardgame.controller.LobbyController
+de/uni_hannover/cardgame/controller/MainMenuController.java
+ de.uni_hannover.cardgame.controller.MainMenuController
+de/uni_hannover/cardgame/ServerClient/Server.java
+ de.uni_hannover.cardgame.ServerClient.Server
+ de.uni_hannover.cardgame.ServerClient.Server$ClientHandler
+de/uni_hannover/cardgame/base/Suit.java
+ de.uni_hannover.cardgame.base.Suit
+de/uni_hannover/cardgame/controller/InGameController.java
+ de.uni_hannover.cardgame.controller.InGameController
+ de.uni_hannover.cardgame.controller.InGameController$1

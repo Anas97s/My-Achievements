@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Post.PostViewUi">
+
+    <include layout="@layout/custom_toolbar"
+        android:id="@+id/postToolBar"/>
+
+    <ImageView
+        android:id="@+id/postCreaterPic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postToolBar"
+        app:srcCompat="@drawable/ic_baseline_person_pin_24" />
+
+    <EditText
+        android:id="@+id/postCreaterName"
+        android:clickable="false"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/post_member"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/postCreaterPic"
+        app:layout_constraintTop_toBottomOf="@+id/postToolBar"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/dateOfPost"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:clickable="false"
+        android:ems="10"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:text="@string/post_date"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/postCreaterPic"
+        app:layout_constraintTop_toBottomOf="@+id/postCreaterName"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/pricePost"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:text="@string/post_price_example"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/postCreaterName"
+        app:layout_constraintTop_toBottomOf="@+id/postToolBar"
+        android:importantForAutofill="no" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/postMembers"
+        android:layout_width="237dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateOfPost" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/detailsPostLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:enabled="false"
+        android:text="@string/description"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postMembers">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/postDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:enabled="false"
+            android:text="@string/description"
+            android:textColor="?attr/colorOnSecondary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:hintTextColor="?attr/colorOnSecondary" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/post_participant"
+        android:textColor="?attr/colorSecondaryVariant"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/postMembers"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

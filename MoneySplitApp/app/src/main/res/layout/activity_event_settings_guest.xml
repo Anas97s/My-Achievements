@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSecondary"
+    >
+
+    <include
+        android:id="@+id/includeGuest"
+        layout="@layout/event_toolbar_guest" />
+
+    <ImageView
+        android:id="@+id/eventImageGuest"
+        android:layout_width="136dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="16dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/includeGuest"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@drawable/event_setting"
+        android:contentDescription="@string/changeEventPic" />
+
+    <TextView
+        android:id="@+id/editEndDateGuest"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/xx_xx_xxxx"
+        android:textColor="?attr/colorPrimary"
+        android:textColorHint="?attr/colorOnSecondary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/endDateGuest"
+        app:layout_constraintTop_toBottomOf="@+id/eventImageGuest" />
+
+    <TextView
+        android:id="@+id/endDateGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/endDate"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventImageGuest" />
+
+    <Button
+        android:id="@+id/changeEventPicGuest"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="?attr/colorOnPrimary"
+        android:text="@string/changeEventPic"
+        android:textAllCaps="false"
+        android:textColor="?attr/colorOnSecondary"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endDateGuest"
+        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+
+    <Button
+        android:id="@+id/addMemberGuest"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="?attr/colorOnPrimary"
+        android:text="@string/addMember"
+        android:textAllCaps="false"
+        android:textColor="?attr/colorSecondary"
+        android:clickable="false"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changeEventPicGuest"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/shareLinkGuest"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="?attr/colorOnPrimary"
+        android:text="@string/shareLink"
+        android:textAllCaps="false"
+        android:textColor="?attr/colorSecondary"
+        android:clickable="false"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addMemberGuest"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/eventDoneGuest"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="?attr/colorOnPrimary"
+        android:text="@string/eventOver"
+        android:textAllCaps="false"
+        android:textColor="?attr/colorOnSecondary"
+        android:clickable="false"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shareLinkGuest"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/changeDateGuest"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="?attr/colorOnPrimary"
+        android:text="@string/changeEndeDate"
+        android:textAllCaps="false"
+        android:textColor="?attr/colorOnSecondary"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventDoneGuest"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/leaveEventGuest"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="?attr/colorOnPrimary"
+        android:text="@string/leaveEvent"
+        android:textAllCaps="false"
+        android:textColor="?attr/colorPrimary"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changeDateGuest"
+        tools:ignore="TextContrastCheck" />
+
+    <CalendarView
+        android:id="@+id/calendarView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorOnPrimary"
+        android:dateTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:weekDayTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/includeGuest" />
+
+    <Button
+        android:id="@+id/setDateTestGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_button"
+        android:text="@android:string/ok"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView3" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

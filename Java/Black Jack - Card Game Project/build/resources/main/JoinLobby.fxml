@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uni_hannover.cardgame.controller.JoinLobbyController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #F4FAF7;" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="69.0" prefWidth="243.0" text="Zurück">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font></Button>
+            <Label layoutX="508.0" layoutY="14.0" prefHeight="88.0" prefWidth="264.0" text="Lobby beitreten" textAlignment="CENTER">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+            <Label layoutX="231.0" layoutY="139.0" text="IP-Adresse:">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Button layoutX="941.0" layoutY="249.0" mnemonicParsing="false" onAction="#joinLobby" prefHeight="44.0" prefWidth="94.0" styleClass="smallButton" text="Ok">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <TextField fx:id="manuell" layoutX="231.0" layoutY="184.0" onKeyPressed="#checkChatActions" prefHeight="45.0" prefWidth="804.0" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

@@ -1,0 +1,6 @@
+Erklären Sie, warum die Methoden der Klasse Calculator virtual sind und
+erläutern Sie die Auswirkungen!
+
+**Antwort**
+Mit virtual können die Funktionen von den Kinder überschrieben werden, und jedes Kind kann die Funktion für sich selbst implementieren, muss aber nicht die 
+gleiche Funktionalität wie in der Elternklasse haben. D.h jedes Kind hat eigene Funktion, die in der Elternklasse schon geschrieben aber anders implementiert.

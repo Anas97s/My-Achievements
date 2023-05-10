@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".SuperApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MoneySplitF1"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Guest.PostGuestView"
+            android:exported="false"
+            android:theme="@style/Theme.MoneySplitF1.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Guest.CreatePostGuest"
+            android:exported="false"
+            android:theme="@style/Theme.MoneySplitF1.NoActionBar"/>
+        <activity
+            android:name=".profile.ChangePaypalActivity"
+            android:exported="false"
+            android:label="@string/chgPayPal"
+            android:parentActivityName=".profile.ProfileActivity" />
+        <activity
+            android:name=".Post.EditPost"
+            android:exported="false"
+            android:theme="@style/Theme.MoneySplitF1.NoActionBar" />
+        <activity
+            android:name=".Guest.EventCreationGuestActivity"
+            android:exported="false"
+            android:label="@string/newEventCreation"
+            android:parentActivityName=".Guest.GuestActivity" />
+        <activity
+            android:name=".profile.ChangePasswordActivity"
+            android:exported="false"
+            android:label="@string/chgPassword"
+            android:parentActivityName=".profile.ProfileActivity" />
+        <activity
+            android:name=".profile.ChangeUsernameActivity"
+            android:exported="false"
+            android:label="@string/chgUsername"
+            android:parentActivityName=".profile.ProfileActivity" />
+        <activity
+            android:name=".Guest.ProfileGuestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profile.ImpressumActivity"
+            android:exported="false"
+            android:label="@string/impressum"
+            android:parentActivityName=".profile.ProfileActivity" />
+        <activity
+            android:name=".profile.ChangeProfilePictureActivity"
+            android:exported="false"
+            android:label="@string/chgPicture"
+            android:parentActivityName=".profile.ProfileActivity" />
+        <activity
+            android:name=".Post.PostViewUi"
+            android:exported="false"
+            android:theme="@style/Theme.MoneySplitF1.NoActionBar" />
+        <activity
+            android:name=".Post.CreatePost"
+            android:exported="false"
+            android:theme="@style/Theme.MoneySplitF1.NoActionBar" />
+        <activity
+            android:name=".Guest.LeaveEventTwoGuest"
+            android:exported="false"
+            android:theme="@style/Theme.MoneySplitF1.NoActionBar" />
+        <activity
+            android:name=".Guest.LeaveEventOneGuest"
+            android:exported="false"
+            android:theme="@style/Theme.MoneySplitF1.NoActionBar" />
+        <activity
+            android:name=".Event.MoveToDoneEvent"
+            android:exported="false"
+            android:theme="@style/Theme.MoneySplitF1.NoActionBar" />
+        <activity
+            android:name=".Event.LeaveEventTwo"
+            android:exported="false"
+            android:theme="@style/Theme.MoneySplitF1.NoActionBar" />
+        <activity
+            android:name=".Event.ParticipantDetail"
+            android:exported="false"
+            android:theme="@style/Theme.MoneySplitF1.NoActionBar" />
+        <activity
+            android:name=".Event.LeaveEventOne"
+            android:exported="false"
+            android:theme="@style/Theme.MoneySplitF1.NoActionBar" />
+        <activity
+            android:name=".Event.ShareLinkOfEvent"
+            android:exported="false"
+            android:theme="@style/Theme.MoneySplitF1.NoActionBar" />
+        <activity
+            android:name=".Event.InviteMemberToEvent"
+            android:exported="false"
+            android:theme="@style/Theme.MoneySplitF1.NoActionBar" />
+        <activity
+            android:name=".Guest.EventGuestUi"
+            android:exported="false"
+            android:theme="@style/Theme.MoneySplitF1.NoActionBar" />
+        <activity
+            android:name=".Guest.EventSettingGuest"
+            android:exported="false"
+            android:theme="@style/Theme.MoneySplitF1.NoActionBar" />
+        <activity
+            android:name=".Event.EventUi"
+            android:exported="false"
+            android:theme="@style/Theme.MoneySplitF1.NoActionBar" />
+        <activity
+            android:name=".Event.EventSetting"
+            android:exported="false"
+            android:theme="@style/Theme.MoneySplitF1.NoActionBar" />
+        <activity
+            android:name=".Guest.SignInOrSignUpGuestActivity"
+            android:exported="false"
+            android:label="@string/settings"
+            android:parentActivityName=".Guest.GuestActivity" />
+        <activity
+            android:name=".Guest.GuestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.startScreen.StartActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".signup.SignUpActivity"
+            android:exported="false"
+            android:label="@string/title_activity_sign_up"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".profile.ProfileActivity"
+            android:exported="false"
+            android:label="@string/settings"
+            android:parentActivityName=".ui.startScreen.StartActivity" />
+        <activity
+            android:name=".Event.EventCreationActivity"
+            android:exported="false"
+            android:label="@string/newEventCreation"
+            android:parentActivityName=".ui.startScreen.StartActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MoneySplitF1.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

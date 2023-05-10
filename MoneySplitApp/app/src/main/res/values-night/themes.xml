@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MoneySplitF1" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/SK_red_B</item>
+        <item name="colorPrimaryVariant">@color/SK_grey</item>
+        <item name="colorOnPrimary">@color/SK_black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/SK_grey</item>
+        <item name="colorSecondaryVariant">@color/SK_silvergrey</item>
+        <item name="colorOnSecondary">@color/SK_black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

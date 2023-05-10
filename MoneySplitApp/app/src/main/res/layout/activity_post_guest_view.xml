@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Post.PostViewUi">
+
+    <include layout="@layout/event_toolbar_guest"
+        android:id="@+id/postToolBar"/>
+
+    <ImageView
+        android:id="@+id/postCreaterPicGuest"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postToolBar"
+        app:srcCompat="@drawable/ic_baseline_person_pin_24" />
+
+    <EditText
+        android:id="@+id/postCreaterNameGuest"
+        android:clickable="false"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Teilnehmer"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/postCreaterPicGuest"
+        app:layout_constraintTop_toBottomOf="@+id/postToolBar" />
+
+    <EditText
+        android:id="@+id/dateOfPostGuest"
+        android:layout_width="150dp"
+        android:clickable="false"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:ems="10"
+        android:text="Datum"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:inputType="date"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/postCreaterPicGuest"
+        app:layout_constraintTop_toBottomOf="@+id/postCreaterNameGuest" />
+
+    <EditText
+        android:id="@+id/pricePostGuest"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:text="##,## €"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/postCreaterNameGuest"
+        app:layout_constraintTop_toBottomOf="@+id/postToolBar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/postMembersGuest"
+        android:layout_width="237dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateOfPostGuest" />
+
+    <ImageView
+        android:id="@+id/imageInPostGuest"
+        android:layout_width="300dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postMembersGuest"
+        app:srcCompat="@drawable/ic_baseline_picture_in_picture_24" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/detailsPostLayoutGuest"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Beschreibung"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:clickable="false"
+        app:layout_constraintTop_toBottomOf="@+id/imageInPostGuest">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/postDetailsGuest"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:text="Beschreibung"
+            android:textColor="?attr/colorOnSecondary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:hintTextColor="?attr/colorOnSecondary"
+            android:clickable="false"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/memberTextGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="7dp"
+        android:text="Teilnehmer"
+        android:textSize="14sp"
+        android:textColor="?attr/colorSecondaryVariant"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintBottom_toTopOf="@+id/postMembersGuest"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

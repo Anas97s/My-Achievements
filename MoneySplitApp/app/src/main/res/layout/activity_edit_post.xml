@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Post.EditPost">
+
+        <include layout="@layout/custom_toolbar"
+            android:id="@+id/editPostToolBar" />
+
+        <ImageView
+            android:id="@+id/postCreaterPicEdit"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPostToolBar"
+            app:srcCompat="@drawable/ic_baseline_person_pin_24"
+            android:contentDescription="@string/post_todo" />
+
+        <EditText
+            android:id="@+id/postTitleEdit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:clickable="false"
+            android:ems="10"
+            android:hint="@string/post_title"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="?attr/colorOnSecondary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/postCreaterPicEdit"
+            app:layout_constraintTop_toBottomOf="@+id/editPostToolBar"
+            tools:ignore="TextContrastCheck"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/dateOfPostEdit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:clickable="false"
+            android:ems="10"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:text="@string/post_date"
+            android:textColor="?attr/colorOnSecondary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/postCreaterPicEdit"
+            app:layout_constraintTop_toBottomOf="@+id/postTitleEdit"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/pricePostEdit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="@string/price_in_euro"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColor="?attr/colorOnSecondary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/postTitleEdit"
+            app:layout_constraintTop_toBottomOf="@+id/editPostToolBar"
+            tools:ignore="TextContrastCheck" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/eventMembersEdit"
+            android:layout_width="200dp"
+            android:layout_height="280dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateOfPostEdit" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/postMembersEdit"
+            android:layout_width="180dp"
+            android:layout_height="280dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/eventMembersEdit"
+            app:layout_constraintTop_toBottomOf="@+id/dateOfPostEdit" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/detailsPostLayoutEdit"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="@string/description"
+            android:textColor="?attr/colorOnSecondary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eventMembersEdit">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/postDetailsEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:clickable="false"
+                android:hint="@string/description"
+                android:textColor="?attr/colorOnSecondary"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:hintTextColor="?attr/colorOnSecondary"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/memberListEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginBottom="7dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/post_event_participant"
+            android:textColor="?attr/colorSecondaryVariant"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/eventMembersEdit"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/memberListEdit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="7dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/post_participant"
+            android:textColor="?attr/colorSecondaryVariant"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/postMembersEdit"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/saveEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/post_save"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/deleteEdit"
+            app:layout_constraintTop_toBottomOf="@+id/detailsPostLayoutEdit"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/cancelEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/post_cancel"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/deleteEdit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailsPostLayoutEdit"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/deleteEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/post_delete"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/saveEdit"
+            app:layout_constraintStart_toEndOf="@+id/cancelEdit"
+            app:layout_constraintTop_toBottomOf="@+id/detailsPostLayoutEdit"
+            tools:ignore="TextContrastCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

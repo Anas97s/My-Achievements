@@ -1,0 +1,4 @@
+Warum sind std::random_device rd und std::default_random_engine re static?
+
+**Antwort**
+wenn es static ist, d.h ist unabhängig von der Klasse und kann nicht verändern.

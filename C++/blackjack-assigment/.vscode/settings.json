@@ -1,0 +1,4 @@
+{
+    "C_Cpp.default.cppStandard": "gnu++20"
+    "C_Cpp.formatting": "vcFormat"
+}

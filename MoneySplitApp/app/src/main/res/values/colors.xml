@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="SK_red">#FF0000</color>
+    <color name="SK_white">#FFFFFF</color>
+    <color name="SK_silvergrey">#D9D9D9</color>
+    <color name="SK_grey">#666666</color>
+    <color name="SK_black">#000000</color>
+    <color name="SK_yellow_A">#FFCC00</color>
+    <color name="SK_yellow_B">#D7AE00</color>
+    <color name="SK_yellow_C">#C39E00</color>
+    <color name="SK_orange_A">#FF9900</color>
+    <color name="SK_orange_B">#CF8700</color>
+    <color name="SK_orange_C">#BC7B00</color>
+    <color name="SK_red_B">#B8061C</color>
+    <color name="SK_red_C">#9D0C19</color>
+    <color name="SK_violet_A">#800080</color>
+    <color name="SK_violet_B">#75055F</color>
+    <color name="SK_violet_C">#5D004A</color>
+    <color name="SK_darkblue_A">#3366FF</color>
+    <color name="SK_darkblue_B">#003F7D</color>
+    <color name="SK_darkblue_C">#003064</color>
+    <color name="SK_lightblue_A">#00CCFF</color>
+    <color name="SK_lightblue_B">#007BAF</color>
+    <color name="SK_lightblue_C">#006996</color>
+    <color name="SK_darkgreen_A">#339966</color>
+    <color name="SK_darkgreen_B">#007348</color>
+    <color name="SK_darkgreen_C">#005D3A</color>
+    <color name="SK_lightgreen_A">#99CC00</color>
+    <color name="SK_lightgreen_B">#CFC700</color>
+    <color name="SK_lightgreen_C">#B3AD00</color>
+</resources>

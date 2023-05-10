@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uni_hannover.cardgame.controller.GameplayController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #F4FAF7;" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="69.0" prefWidth="243.0" text="Zurück">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font></Button>
+            <Label layoutX="512.0" layoutY="67.0" prefHeight="88.0" prefWidth="257.0" text="Spielablauf" textAlignment="CENTER">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Label>
+            <TextArea layoutX="71.0" layoutY="189.0" prefHeight="192.0" prefWidth="1117.0" text="Es gibt ein Dealer und max. 2 Spielern.&#10;Bevor der Dealer die Karte verteilt,  muss der Spieler wetten.&#10;Der Dealer wartet auf den Spieler zu entscheiden, ob er noch eine Karte ziehen möchte oder nicht.&#10;Falls der Spieler entschieden hat, dass er keine andere Karte ziehen möchte,  ist der Dealer daran und muss&#10;eine Karte ziehen bis die Summe von allen Karten &gt;= 18 und &lt;= 21. ">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </TextArea>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

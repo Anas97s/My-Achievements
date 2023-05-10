@@ -1,0 +1,7 @@
+Sehen Sie sich die Klasse CalculatorPrinter an! Welche Aufgabe erfüllt diese Klasse?
+CalculatorPrinter ruft lediglich eine einzelne Memberfunktion von Calculator auf. Warum
+ist diese Klasse dennoch sinnvoll?
+
+**Antwort**
+die CalculatorPrinter-Funktion übernimmt Calculator(z.B Not/or/and) und Traveltype, damit sie nach Traversal type die richtige beschreibung des Types ausdrückt.
+ z.B bei NotCalculator und Infix als traversaltype sollte "(~(x))" ausgedrückt werden.

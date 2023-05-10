@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    android:id="@+id/event_toolBarGuest"
+    tools:context=".Guest.EventGuestUi">
+
+    <ImageView
+        android:id="@+id/event_back_toolbar_Guest"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/arrow_back" />
+
+    <ImageView
+        android:id="@+id/event_settings_Guest"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="25dp"
+        android:src="@drawable/event_setting"/>
+    <TextView
+        android:id="@+id/setting_title_Guest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Veranstaltung #1"
+        android:textSize="20sp"
+        android:textColor="?attr/colorOnPrimary"
+        android:textStyle="bold"
+        android:layout_marginLeft="25dp"/>
+
+    <ImageView
+        android:id="@+id/addPostGuest"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_baseline_add_24"
+        android:layout_marginLeft="70dp"
+        />
+
+</androidx.appcompat.widget.Toolbar>

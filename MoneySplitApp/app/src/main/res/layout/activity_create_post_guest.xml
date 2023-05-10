@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Guest.CreatePostGuest">
+
+        <include layout="@layout/event_toolbar_guest"
+            android:id="@+id/includePostGuest"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/titleLayoutGuest"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="190dp"
+            android:hint="Titel"
+            app:endIconMode="clear_text"
+            app:endIconTint="?attr/colorSecondaryVariant"
+            app:helperText="@string/required"
+            app:helperTextTextColor="?attr/colorPrimary"
+            app:hintTextColor="?attr/colorSecondaryVariant"
+            app:boxStrokeColor="?attr/colorAccent"
+            app:layout_constraintEnd_toStartOf="@+id/priceLayoutGuest"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includePostGuest">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/titleTextGuest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/priceLayoutGuest"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Wert"
+            app:endIconCheckable="false"
+            app:endIconDrawable="@drawable/ic_baseline_euro_symbol_24"
+            app:endIconMode="custom"
+            app:endIconTint="?attr/colorSecondaryVariant"
+            app:helperText="Erforderlich*"
+            app:helperTextTextColor="?attr/colorPrimary"
+            app:boxStrokeColor="?attr/colorAccent"
+            app:hintTextColor="?attr/colorSecondaryVariant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/titleLayoutGuest"
+            app:layout_constraintTop_toBottomOf="@+id/includePostGuest">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/priceTextGuest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/postDetailsLayoutGuest"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Beschreibung"
+            app:counterEnabled="true"
+            app:counterMaxLength="120"
+            app:helperText="Optional*"
+            app:helperTextTextColor="?attr/colorPrimary"
+            app:hintTextColor="?attr/colorSecondaryVariant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleLayoutGuest">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/postDetailsTextGuest"
+                android:layout_width="match_parent"
+                android:layout_height="180dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/billUploadGuest"
+            android:layout_width="249dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/postDetailsLayoutGuest"
+            app:srcCompat="@drawable/ic_baseline_picture_in_picture_24" />
+
+    <Button
+        android:id="@+id/postCreateGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/custom_button"
+        android:text="Post Erstellen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/postCancelGuest"
+        app:layout_constraintTop_toBottomOf="@+id/billUploadGuest" />
+
+    <Button
+        android:id="@+id/postCancelGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/postCreateGuest"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/billUploadGuest" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

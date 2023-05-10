@@ -1,0 +1,24 @@
+
+Bisher deckt das Programm newwc nur einen Teil der Funktionalität von wc ab. Dies soll nun geändert werden.
+Implementieren Sie dazu die folgenden Features von wc auch für newwc: 
+
+*	Wird beim Aufruf von wc keine Datei angegeben, so wertet das Programm die Standardeingabe bis zum Auftreten des End-Of-File-Zeichens aus und
+	gibt dafür die Anzahl Zeilen, Wörter und Zeichen ohne Angabe eines Namens aus.\\
+	Hinweis: End-Of-File kann in der Kommandozeile mittels Ctrl-D eingegeben werden.  
+	
+*	Werden beim Aufruf von wc mehrere Dateinamen als Argumente angegeben, so werden die entsprechenden Informationen jeweils in einer Zeile pro Datei ausgegeben.
+	In diesem Fall (und nur dann) wird zusätzlich eine Extrazeile für die Summe der Zeilen, Wörter und Zeichen über alle Dateien ausgegeben. 
+	Beispiel:
+	
+	$ newwc hamlet.txt macbeth.txt
+	5302	32230	178848	hamlet.txt
+	3196	20146	125897	macbeth.txt
+	8498	52376	304745	total
+
+
+*	Neben Leerzeichen interpretiert wc auch Tabulatorzeichen ('\t') und als Carriage-Return ('\r') als Trenner für Wörter.
+	Hinweise:		
+	*	Die Memberfunktion find_first_of von std::string könnte zu diesem Zweck nützlich sein.
+	*	Beachten Sie, dass leere Wörter zwischen aufeinanderfolgenden Trennzeichen (Leerzeichen, Tabulatoren oder Zeilenumbrüchen) nicht gezählt werden. 
+		Dies gilt insbesondere auch für leere Wörter am Ende einer Zeile.
+	 	
